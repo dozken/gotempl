@@ -1,0 +1,11 @@
+package user
+
+import (
+"github.com/dozken/gotempl/view/layout"
+"github.com/dozken/gotempl/model"
+)
+templ Show(user model.User) {
+	@layout.Base() {
+		<h1>Hey, {user.Email} with name: {user.Name} from page</h1>
+	}
+}
